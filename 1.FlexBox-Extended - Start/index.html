@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS- Flexbox Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="in-article-cards">
+        <article  class="in-article-card link" id="mini-post-1">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    A
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-2">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    B
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-3">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    C
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-4">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    D
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-5">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    E
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-6">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    F
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-7">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    G
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-8">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    H
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link item-grow-2" id="mini-post-9">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <p>sdokfsdfklsdflsdkflsdflsdkflsdfdskf
+                sdfsflsdflksdlfksldkflsdkflskdlfksldkf
+                sfsdlkfsdkflsdkflsdkf
+            </p>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    I
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-10">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    J
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-11">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    K
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link item-grow-2" id="mini-post-12">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    L
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+        <article class="in-article-card link" id="mini-post-13">
+            <time datetime="2013-09-26" title="Originally published Apr 8, 2013">
+                <strong>
+                Article
+                </strong>
+                on
+                Sep 26, 2013 
+            </time>
+            <h3>
+                <a href="https://css-tricks.com/solved-flexbox/">Solved by Flexbox </a>
+            </h3>
+            <div class="tags">
+                <a href="https://css-tricks.com/tag/flexbox/" rel="tag">flexbox</a> 
+                <a href="https://css-tricks.com/tag/layout/" rel="tag">layout</a> 
+            </div>
+            <div class="number-row">
+                <div class="number">
+                    M
+                </div>
+            </div>
+            <div class="author-row">
+                <a href="https://css-tricks.com/author/chriscoyier/" aria-label="Author page of Chris Coyier">
+                  <!-- <img alt="" src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&amp;d=retro&amp;r=pg" class="avatar avatar-80 photo jetpack-lazy-image jetpack-lazy-image--handled" height="80" width="80" loading="eager" srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&amp;d=retro&amp;r=pg 2x" data-lazy-loaded="1"><noscript> -->
+                  <img alt='' src='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' loading='lazy'/></noscript> 
+                </a>
+                <a class="author-name" href="https://css-tricks.com/author/chriscoyier/">Chris Coyier </a>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
